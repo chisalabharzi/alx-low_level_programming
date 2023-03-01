@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - It takes sweat, determination and hard work
- * Return: 0.
- */
-
 int main(void)
 {
 int n;
