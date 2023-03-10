@@ -1,10 +1,7 @@
-#include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 
-int _isdigit(int c)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-    return isdigit(c);
+    return memcpy(dest, src, n);
 }
