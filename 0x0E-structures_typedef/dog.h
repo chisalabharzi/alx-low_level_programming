@@ -1,10 +1,8 @@
 #ifndef DOG_H
 #define DOG_H
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- * struct dog - Dog
+ * struct dog - creates a new structure of dog
  * @name: Dog's name
  * @age: Age
  * @owner: The owner
@@ -15,7 +13,7 @@ struct dog
 	float age;
 	char *owner;
 };
-typedef struct dog dog_t:
+typedef struct dog dog_t;
 
 	void init_dog(struct dog *d, char *name, float age, char *owner);
 	void print_dog(struct dog *d);
