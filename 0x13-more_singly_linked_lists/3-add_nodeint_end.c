@@ -2,10 +2,12 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - adds a new node at the end of a listint_t list
- * @head: a pointer to the head of the listint_t
- * @n: an integer to be stored in the new node
- * Return: address of the new element, NULL if failed
+ * add_nodeint_end - Adds a new node at the end of a listint_t list.
+ * @head: A pointer to the head of the listint_t.
+ * @n: An integer to be stored in the new node.
+ *
+ * Return: If successful - address of the new element.
+ *         If failed - NULL.
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
