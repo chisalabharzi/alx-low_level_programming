@@ -1,22 +1,21 @@
-#include "main.h"
-#include <stdio.h>
+#include"main.h"
 
 /**
- * get_bit - function that returns the value of a bit at a given index
- * @n: is the unsigned long int
- * @index: index
+ * get_bit - returns the value of a bit at a given index.
+ * @n: number to check bits in
+ * @index: index at which to check bit
  *
- * Return: the value of the bit at index or -1 if an error occured
+ * Return: value of the bit, or -1 if there is an error
  */
-
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int nm;
+	unsigned long int divisor, check;
 
-	if (index > 63)
+	if (index > (sizeof(unsigned long int) * 8 - 1))
 		return (-1);
-
-	unsigned long int mask = 1UL << index;
-
-	return ((n & mask) != 0);
+	divisor = 1 << index;
+	check = n & divisor;
+	if (check == divisor)
+		return (1);
+	return (0);
 }
